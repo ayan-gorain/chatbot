@@ -18,6 +18,14 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
             messages: [...prev.messages, botMessage],
         }));
     };
+    const handleAnju = () => {
+        const botMessage = createChatBotMessage('Hello Anjuman Mam, Nice to meet you. How Can I help you?');
+
+        setState((prev) => ({
+            ...prev,
+            messages: [...prev.messages, botMessage],
+        }));
+    };
 
     const handleDog = () => {
         const botMessage = createChatBotMessage(
@@ -56,6 +64,7 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
             handleDog,
             handleAvatar,
             handleAjay,
+            handleAnju,
           },
         });
       })}

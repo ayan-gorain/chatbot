@@ -22,9 +22,12 @@ const MessageParser = ({ children, actions }) => {
     if(message.includes('avatar')) {
         actions.handleAvatar();
     }
+    if(message.includes('anju')) {
+      actions.handleAnju();
+      }
     if(message.includes('ajay')) {
       actions.handleAjay();
-      }
+    }
   };
 
   return (
