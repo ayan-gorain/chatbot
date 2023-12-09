@@ -24,7 +24,7 @@ function App() {
         actionProvider={ActionProvider}
         messageParser={MessageParser}
         disableScrollToBottom
-        headerText='Talk to Mice'
+        headerText='Talk to our bot'
         placeholderText='Write your message here.'
         />
       )}
